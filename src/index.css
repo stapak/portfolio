@@ -1,0 +1,9 @@
+html, body, #root{
+  min-height:100%;
+  background:#1f2028;
+  margin:0;
+}
+
+.container{
+  background:transparent !important;
+}
