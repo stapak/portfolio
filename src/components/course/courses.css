@@ -1,0 +1,73 @@
+/* ===== SECTION ===== */
+.courses-section {
+  margin-top: 50px;
+}
+
+/* ===== GLASS CONTAINER ===== */
+.courses-glass {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 40px 80px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+/* ===== HEADING ===== */
+.courses-heading {
+  font-family: "Poppins";
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* ===== COURSE CARD ===== */
+.course-card {
+  max-width: 300px;
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+
+  background-color: rgba(255, 255, 255, 0.03) !important;
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 40px 80px rgba(0, 0, 0, 0.5);
+
+  transition: 0.3s;
+}
+
+/* override bootstrap body */
+.course-card .card-body {
+  background: transparent !important;
+}
+
+/* ===== IMAGE ===== */
+.course-img {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+/* ===== TITLE FIX (IMPORTANT) ===== */
+.course-title {
+  margin-top: 10px;
+  font-family: "Poppins";
+  font-size: clamp(20px, 2.5vw, 28px);
+
+  color: #ffffff !important;   /* 🔥 force override */
+}
+
+/* also override bootstrap h5 */
+.course-card .card-title {
+  color: #ffffff !important;
+}
+
+/* ===== LINK ===== */
+.course-link {
+  text-decoration: none;
+  color: #00bfff;
+}
