@@ -1,35 +1,30 @@
-import Skills from "./Skill"
+import Skills from "./Skills";
 
-function SkillList({title,skillsArray}){
-    return(
-        <div style={{
-            width:"300px",
-            height:"600px",
-            border:"",
-            margin:"10px"
-        }}>
-        
-            <h1 style={{
-                fontSize: "50px",
-                fontWeight: "700",
-                color: "#4386e9"
-            }}>
-                {title}
-            </h1>
-            
-           <div style={{
-            marginTop:"20px"
-           }}>
-            {skillsArray.map((arrayElement)=>(
-                <Skills 
-                    logo={arrayElement.logo}
-                    name={arrayElement.name}
-                />
-            ))}
+function SkillList({ title, skillsArray }) {
 
-            </div>
-        </div>
-    )
+  return (
+
+    <div className="skill-column">
+
+      <h1 className="skill-title">
+        {title}
+      </h1>
+
+      <div className="skill-list">
+
+        {skillsArray.map((skill) => (
+          <Skills
+            key={skill.name}
+            logo={skill.logo}
+            name={skill.name}
+          />
+        ))}
+
+      </div>
+
+    </div>
+
+  );
 }
 
 export default SkillList;

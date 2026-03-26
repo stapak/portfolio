@@ -11,7 +11,7 @@ function App() {
 
       <hr className="my-5"/>
 
-      
+      <SkillPage />
      
     </Container>
   );

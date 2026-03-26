@@ -21,97 +21,73 @@ import tkinterLogo from '../../assets/skills logo/tkinter logo.jpeg'
 import gitLogo from '../../assets/skills logo/git logo.png'
 import githubLogo from '../../assets/websites logos/github logo.png'
 
+
+import { Container } from "react-bootstrap";
+import "./skillsPage.css";
+
+// keep ALL your logo imports SAME
+
 function SkillPage(){
-    const frontendSkills = [
+
+  const frontendSkills = [
     { name:"React.js",logo:reactLogo },
     { name:"Tailwind CSS",logo:tailwindcssLogo }
-    ]
+  ]
 
-    const backendSkills =[
+  const backendSkills =[
     { name:"",logo:flaskLogo },
     { name:"",logo:nodejsLogo },
     { name:"",logo:expressLogo }
-   
-    ]
+  ]
 
-    const programmingLanguage=[
+  const programmingLanguage=[
     { name:"Python",logo:pythonLogo },
     { name:"Shell Scripting",logo:shellLogo },
     { name:"JavaScript",logo:javasciptLogo }
-    ]
+  ]
 
-    const database=[
+  const database=[
     { name:"MySQL",logo:mysqlLogo },
-    { name:"mongoDB",logo:mongodbLogo }
-    ]
+    { name:"MongoDB",logo:mongodbLogo }
+  ]
 
-    const tools=[
+  const tools=[
     { name:"Git",logo:gitLogo },
     { name:"GitHub",logo:githubLogo }
-    ]
+  ]
 
-    const library=[
+  const library=[
     { name:"Tkinter",logo:tkinterLogo }
-    ]
+  ]
+
   return (
-    <>
-    <h1>My Skills</h1>
-    <div style={{
-        width:"1100px",
-        display:"flex",
-        flexWrap: "wrap",
-        gap: "",
-        marginLeft:"150px",
-        marginBottom:"50px",
-        borderRadius: "20px",
-        border: "1px solid rgba(255,255,255,0.06)",
-        boxShadow:"0 10px 30px rgba(0,0,0,0.4), 0 40px 80px rgba(0,0,0,0.5)",
-        padding: "24px",
-        transition: "0.3s"
-    }}>
 
-    <SkillList 
-    title="Programming"
-    skillsArray={programmingLanguage}
-    />
-    <hr/>
+    <section className="skills-section">
 
-    <SkillList 
-    title="FrontEnd"
-    skillsArray={frontendSkills}
-    />
-    <hr/>
-    
-    <SkillList 
-    title="BackEnd"
-    skillsArray={backendSkills}
-    />
-    
+      <Container>
 
-    <SkillList 
-    title="Database"
-    skillsArray={database}
-    />
+        <h1 className="skills-heading">My Skills</h1>
 
-    <hr/>
+        <div className="skills-glass">
 
-    <SkillList 
-    title="Libraries"
-    skillsArray={library}
-    />
-    
-    
-    <hr/>
+          <div className="skills-grid">
 
-    <SkillList 
-    title="Tools"
-    skillsArray={tools}
-    />
-    
+            <SkillList title="Programming" skillsArray={programmingLanguage}/>
+            <SkillList title="FrontEnd" skillsArray={frontendSkills}/>
+            <SkillList title="BackEnd" skillsArray={backendSkills}/>
+            <SkillList title="Database" skillsArray={database}/>
+            <SkillList title="Libraries" skillsArray={library}/>
+            <SkillList title="Tools" skillsArray={tools}/>
 
-    </div>
-    </>
-    )
+          </div>
+
+        </div>
+
+      </Container>
+
+    </section>
+
+  )
 }
 
 export default SkillPage;
