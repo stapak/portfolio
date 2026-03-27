@@ -44,7 +44,7 @@ function SkillPage(){
   const programmingLanguage=[
     { name:"Python",logo:pythonLogo },
     { name:"Shell Scripting",logo:shellLogo },
-    { name:"JavaScript",logo:javasciptLogo }
+    { name:"JavaScript",logo:javasciptLogo },
   ]
 
   const database=[

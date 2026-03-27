@@ -1,3 +1,14 @@
+/* ================= FULL SCREEN HERO ================= */
+
+.profile-section{
+  min-height:100vh;              /* full screen */
+  display:flex;
+  align-items:center;            /* vertical center */
+  padding:40px 0;                /* breathing space for small screens */
+}
+
+/* ================= ENTRY ANIMATION ================= */
+
 .slide-up{
   opacity:0;
   transform:translateY(60px);
@@ -11,7 +22,7 @@
   }
 }
 
-/* PROFILE BOX */
+/* ================= DETAILS BOX ================= */
 
 .profile-details-box{
   width:100%;
@@ -23,7 +34,7 @@
   flex-direction:column;
 }
 
-/* TYPOGRAPHY */
+/* ================= TEXT ================= */
 
 .intro-text{
   font-size:clamp(28px,5vw,50px);
@@ -32,24 +43,24 @@
 }
 
 .hero-name{
-  font-size:clamp(48px,8vw,100px);
+  font-size:clamp(48px,80vw,100px);
   font-weight:700;
   color:#4386e9;
   margin:0;
   line-height:1.1;
 }
 
-/* LINKS ROW */
+/* ================= LINKS ================= */
 
 .links-row{
   display:flex;
-  flex-wrap:wrap;      
+  flex-wrap:wrap;       /* allow wrap for mid screens */
   gap:14px;
   margin-top:auto;
   align-items:center;
 }
 
-/* prevent squeeze */
+/* prevent shrinking */
 
 .links-row > div{
   flex-shrink:0;
@@ -64,14 +75,19 @@
   flex-shrink:0;
 }
 
-/* MOBILE STACK */
+/* ================= MOBILE ================= */
 
 @media (max-width:768px){
 
+.profile-section{
+  align-items:flex-start;   /* better mobile spacing */
+  padding-top:50px;
+}
+
 .links-row{
+  padding-top: 20px;;
   flex-direction:column;
   align-items:center;
-  
 }
 
 .divider{
@@ -79,19 +95,33 @@
   height:1px;
 }
 
-}
-@media (min-width:769px) and (max-width:900px){
-
-.links-row{
-  margin-top:40px;   
-}
-
-}
-
-@media (min-width:300px) and (max-width:450px){
-
-.links-row{
-  margin-top:20px;   
+.hero-name{
+  font-size:clamp(48px,22vw,100px);
+  font-weight:700;
+  color:#4386e9;
+  margin:0;
+  line-height:1.1;
 }
 
+}
+
+/* ================= IMAGE SIZE CONTROL ================= */
+
+/* default (mobile + small screens) */
+.profile-section img{
+  max-width:280px;
+}
+
+/* tablet */
+@media (min-width:768px){
+  .profile-section img{
+    max-width:340px;
+  }
+}
+
+/* laptop and above */
+@media (min-width:992px){
+  .profile-section img{
+    max-width:450px;   /* ⭐ slightly bigger */
+  }
 }

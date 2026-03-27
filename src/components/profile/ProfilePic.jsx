@@ -5,26 +5,13 @@ function ProfilePic(){
 
   return (
 
-    <div
-      style={{
-        width:"100%",
-        maxWidth:"400px",
-        padding:"15px",
-        margin:"10px",
-        borderRadius:"25px"
-      }}
-    >
+    <div className="profile-pic-wrapper">
 
       <Image
         src={ProfileImage}
         alt="Sachin Kamat"
         fluid
-        style={{
-          width:"100%",
-          height:"auto",
-          objectFit:"contain",
-          borderRadius:"25px"
-        }}
+        className="profile-pic"
       />
 
     </div>

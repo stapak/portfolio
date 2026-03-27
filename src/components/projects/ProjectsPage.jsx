@@ -16,7 +16,7 @@ function ProjectsPage() {
   const reachBlog = {
     image: reachBlogLogo,
     title: "Reach Blogs",
-    repolink: "https://github.com/stapak/AND",
+    repolink: "https://github.com/stapak/reach",
     description: [
                   "Developed an Avengers-themed blogging platform using the Python web framework Flask to demonstrate backend web development concepts",
                   "Implemented dynamic page rendering using Jinja templates with reusable layouts and template inheritance",

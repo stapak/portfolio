@@ -7,21 +7,25 @@ function ProfilePage(){
 
   return (
 
-    <Container className="slide-up" fluid id="ProfilePage">
+    <section className="profile-section" id="ProfilePage">
 
-      <Row className="align-items-center">
+      <Container className="slide-up">
 
-        <Col xs={12} md={4} className="d-flex justify-content-center">
-          <ProfilePic />
-        </Col>
+        <Row className="align-items-center">
 
-        <Col xs={12} md={8}>
-          <ProfileDetails />
-        </Col>
+          <Col xs={12} md={4} className="d-flex justify-content-center">
+            <ProfilePic />
+          </Col>
 
-      </Row>
+          <Col xs={12} md={8}>
+            <ProfileDetails />
+          </Col>
 
-    </Container>
+        </Row>
+
+      </Container>
+
+    </section>
 
   )
 

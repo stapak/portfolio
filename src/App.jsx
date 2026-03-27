@@ -10,12 +10,12 @@ import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <Container fluid className="py-5">
+    <Container fluid className="py-4">
       <Header />
 
       <ProfilePage />
 
-      <hr className="my-5"/>
+      <hr className="my-5 "/>
 
       <SkillPage />
 
