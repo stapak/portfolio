@@ -18,4 +18,4 @@ A personal portfolio built using React to showcase my projects and skills.
 
 ## 🌐 Live Demo
 
-[Click Me](link has to be updated.)
+[Click Me](https://stapak.github.io/portfolio/) for live demo
