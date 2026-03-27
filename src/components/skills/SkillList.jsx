@@ -12,9 +12,9 @@ function SkillList({ title, skillsArray }) {
 
       <div className="skill-list">
 
-        {skillsArray.map((skill) => (
+        {skillsArray.map((skill, index) => (
           <Skills
-            key={skill.name}
+            key={index}
             logo={skill.logo}
             name={skill.name}
           />

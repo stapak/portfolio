@@ -1,0 +1,39 @@
+.projects-section {
+  margin-top: 50px;
+}
+
+.projects-glass {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 40px 80px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.projects-heading {
+  font-family:"Poppins", sans-serif;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* ===== SECTION ===== */
+.projects-section {
+  margin-top: 50px;
+}
+
+/* ===== CENTER WRAPPER (like skills page behavior) ===== */
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.projects-heading{
+  text-align:center;
+  font-family:"Poppins", sans-serif;
+  margin-bottom:40px;
+  color:white;                     /* ⭐ FIX */
+  font-size:clamp(36px,5vw,60px); /* ⭐ optional improvement */
+}

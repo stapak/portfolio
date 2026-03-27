@@ -1,0 +1,78 @@
+.header{
+max-width: 1200px;
+  margin: 0 auto;
+
+  width: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* must be center */
+  height: 100%;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  width: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.header-logo {
+  color: #4386e9;
+  font-family:"Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(20px, 2.5vw, 60px);
+
+  margin: 0;          /* 🔥 FIX */
+  line-height: 1;     /* keeps it tight */
+}
+
+/* NAV */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(15px, 2vw, 35px); /* 🔥 responsive spacing */
+}
+
+.header-nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 20px); /* 🔥 responsive */
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #66d9ff;
+}
+
+.header-logo {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #66d9ff;
+  transition: width 0.3s ease;
+}
+
+.header-logo:hover::after {
+  width: 100%;
+}
+

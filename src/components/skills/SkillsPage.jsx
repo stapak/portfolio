@@ -4,6 +4,7 @@ import SkillList from "./SkillList";
 // importing logos.
 import reactLogo from '../../assets/skills logo/react logo.svg'
 import tailwindcssLogo from '../../assets/skills logo/tailwindcss logo.svg'
+import bootstrapLogo from '../../assets/skills logo/bootstrap-logo.svg'
 
 import pythonLogo from '../../assets/skills logo/python logo.png'
 import shellLogo from '../../assets/skills logo/shell scripting logo.png'
@@ -31,7 +32,7 @@ function SkillPage(){
 
   const frontendSkills = [
     { name:"React.js",logo:reactLogo },
-    { name:"Tailwind CSS",logo:tailwindcssLogo }
+    { name:"Bootstrap",logo:bootstrapLogo }
   ]
 
   const backendSkills =[
@@ -62,7 +63,7 @@ function SkillPage(){
 
   return (
 
-    <section className="skills-section">
+    <section className="skills-section" id="SkillsPage">
 
       <Container>
 

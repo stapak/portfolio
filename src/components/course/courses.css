@@ -15,9 +15,13 @@
 
 /* ===== HEADING ===== */
 .courses-heading {
-  font-family: "Poppins";
+  font-family:"Poppins", sans-serif;
   margin-bottom: 25px;
   color: #ffffff;
+  font-size:clamp(28px,4vw,48px);
+  font-weight:700;
+  color:#4386e9;
+  
 }
 
 /* ===== COURSE CARD ===== */

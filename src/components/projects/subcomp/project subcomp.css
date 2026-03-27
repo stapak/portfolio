@@ -1,0 +1,202 @@
+/* ===== GLOBAL IMAGE ===== */
+img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ===== PROJECT CARD CONTAINER (GLASS BOX) ===== */
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px;
+
+  margin: 20px auto;
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== IMAGE ===== */
+.project-pic-wrapper {
+  height: 300px;
+}
+
+.project-pic-img {
+  height: 100%;
+  width: 100%;
+   object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ===== DETAILS (RIGHT SIDE) ===== */
+.project-details {
+  flex: 1;
+  min-width: 0;
+  margin-left: 30px;
+}
+
+/* ===== TITLE ===== */
+.project-details-title {
+  font-family:"Poppins", sans-serif;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 700;
+  color: #66d9ff;
+}
+
+/* ===== REPO LINK (BUTTON STYLE) ===== */
+.project-details-link {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #1f2028;
+  background-color: #66d9ff;
+
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.project-details-link:hover {
+  background-color: #4fc3e0;
+  color: #ffffff;
+}
+
+/* ===== TECH STACK ===== */
+.project-techstack {
+  margin-top: 15px;
+}
+
+.project-techstack-title {
+  color: #b0b0b0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-techstack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tech-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding-right: 12px;
+  margin-right: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-tech-item:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.project-techstack-img {
+  height: 45px;
+  object-fit: contain;
+}
+
+.project-tech-name {
+  font-size: 16px;
+  color: #d0d0d0;
+}
+
+/* ===== DESCRIPTION ===== */
+.project-description {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.project-description-list {
+  color: #cccccc;
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVENESS */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .project-card-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .project-pic-wrapper {
+    width: 100%;
+    height: 220px;
+  }
+
+  .project-details {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .project-details-title {
+    font-size: clamp(28px, 6vw, 34px);
+  }
+
+  .project-techstack-img {
+    height: 40px;
+  }
+
+  .project-details-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .project-description {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* line */
+    padding-top: 15px;  
+    margin-top: 20px;   
+  }
+}
+
+@media (max-width: 480px) {
+
+  .project-card-container {
+    padding: 20px;
+  }
+
+  .project-details-title {
+    font-size: 26px;
+  }
+
+  .project-techstack-img {
+    height: 35px;
+  }
+
+  .project-tech-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .project-card-container {
+    width: 95%;
+    padding: 35px;
+  }
+
+  .project-pic-wrapper {
+    height: 250px;
+  }
+}

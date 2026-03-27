@@ -5,13 +5,13 @@ import "./certificate.css";
 
 function CertificatePage() {
   return (
-    <section className="courses-section">
+    <section className="certificate-section" id="CertificatePage">
       <Container>
 
-        <div className="courses-glass">
+        <div className="certificate-glass">
 
           {/* TITLE INSIDE BOX */}
-          <h1 className="courses-heading">
+          <h1 className="certificate-heading">
             Skill Certifications
           </h1>
 

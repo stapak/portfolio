@@ -5,7 +5,7 @@ import "./courses.css";
 
 function CoursesPage() {
   return (
-    <section className="courses-section">
+    <section className="courses-section" id="CoursesPage">
       <Container>
 
         <div className="courses-glass">

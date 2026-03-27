@@ -1,10 +1,11 @@
 /* ===== SECTION ===== */
-.courses-section {
+.certificate-section {
   margin-top: 50px;
 }
 
-/* ===== GLASS CONTAINER ===== */
-.courses-glass {
+/* ===== GLASS CONTAINER ===== currently commented*/
+/*
+.certificate-glass {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow:
@@ -12,16 +13,20 @@
     0 40px 80px rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
+*/
 
 /* ===== HEADING ===== */
-.courses-heading {
+.certificate-heading {
   font-family:"Poppins", sans-serif;
   margin-bottom: 25px;
   color: #ffffff;
+  font-size:clamp(28px,4vw,48px);
+  font-weight:700;
+  color:#4386e9;
 }
 
-/* ===== COURSE CARD ===== */
-.course-card {
+/* ===== certificate CARD ===== */
+.certificate-card {
   max-width: 300px;
   width: 100%;
   min-height: 300px;
@@ -40,12 +45,12 @@
 }
 
 /* override bootstrap body */
-.course-card .card-body {
+.certificate-card .card-body {
   background: transparent !important;
 }
 
 /* ===== IMAGE ===== */
-.course-img {
+.certificate-img {
   max-width: 250px;
   width: 100%;
   margin: 0 auto;
@@ -53,7 +58,7 @@
 }
 
 /* ===== TITLE FIX (IMPORTANT) ===== */
-.course-title {
+.certificate-title {
   margin-top: 10px;
   font-family:"Poppins", sans-serif;
   font-size: clamp(20px, 2.5vw, 28px);
@@ -62,12 +67,12 @@
 }
 
 /* also override bootstrap h5 */
-.course-card .card-title {
+.certificate-card .card-title {
   color: #ffffff !important;
 }
 
 /* ===== LINK ===== */
-.course-link {
+.certificate-link {
   text-decoration: none;
   color: #00bfff;
 }

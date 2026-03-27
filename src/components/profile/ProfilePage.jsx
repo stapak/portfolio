@@ -7,7 +7,7 @@ function ProfilePage(){
 
   return (
 
-    <Container className="slide-up" fluid>
+    <Container className="slide-up" fluid id="ProfilePage">
 
       <Row className="align-items-center">
 
