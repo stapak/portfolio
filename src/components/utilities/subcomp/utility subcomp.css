@@ -1,0 +1,202 @@
+/* ===== GLOBAL IMAGE ===== */
+img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ===== PROJECT CARD CONTAINER (GLASS BOX) ===== */
+.utility-card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px;
+
+  margin: 20px auto;
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== IMAGE ===== */
+.utility-pic-wrapper {
+  height: 300px;
+}
+
+.utility-pic-img {
+  height: 100%;
+  width: 100%;
+   object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ===== DETAILS (RIGHT SIDE) ===== */
+.utility-details {
+  flex: 1;
+  min-width: 0;
+  margin-left: 30px;
+}
+
+/* ===== TITLE ===== */
+.utility-details-title {
+  font-family:"Poppins", sans-serif;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 700;
+  color: #66d9ff;
+}
+
+/* ===== REPO LINK (BUTTON STYLE) ===== */
+.utility-details-link {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #1f2028;
+  background-color: #66d9ff;
+
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.utility-details-link:hover {
+  background-color: #4fc3e0;
+  color: #ffffff;
+}
+
+/* ===== TECH STACK ===== */
+.utility-techstack {
+  margin-top: 15px;
+}
+
+.utility-techstack-title {
+  color: #b0b0b0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.utility-techstack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.utility-tech-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding-right: 12px;
+  margin-right: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.utility-tech-item:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.utility-techstack-img {
+  height: 45px;
+  object-fit: contain;
+}
+
+.utility-tech-name {
+  font-size: 16px;
+  color: #d0d0d0;
+}
+
+/* ===== DESCRIPTION ===== */
+.utility-description {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.utility-description-list {
+  color: #cccccc;
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVENESS */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .utility-card-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .utility-pic-wrapper {
+    width: 100%;
+    height: 220px;
+  }
+
+  .utility-details {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .utility-details-title {
+    font-size: clamp(28px, 6vw, 34px);
+  }
+
+  .utility-techstack-img {
+    height: 40px;
+  }
+
+  .utility-details-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .utility-description {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* line */
+    padding-top: 15px;  
+    margin-top: 20px;   
+  }
+}
+
+@media (max-width: 480px) {
+
+  .utility-card-container {
+    padding: 20px;
+  }
+
+  .utility-details-title {
+    font-size: 26px;
+  }
+
+  .utility-techstack-img {
+    height: 35px;
+  }
+
+  .utility-tech-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .utility-card-container {
+    width: 95%;
+    padding: 35px;
+  }
+
+  .utility-pic-wrapper {
+    height: 250px;
+  }
+}
