@@ -1,7 +1,11 @@
-import hackerRankImage from "../../assets/skill certifications/hacker rank background image.webp";
 import Certificate from "./Certificate";
 import { Container, Row, Col } from "react-bootstrap";
 import "./certificate.css";
+
+// logos and images
+import hackerRankImage from "../../assets/skill certifications/hacker rank background image.webp";
+import pythonBasicImage from "../../assets/skill certifications/python basic.png";
+import sqlBasicImage from "../../assets/skill certifications/sql basic.png";
 
 function CertificatePage() {
   return (
@@ -19,7 +23,7 @@ function CertificatePage() {
 
             <Col xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center">
               <Certificate
-                logo={hackerRankImage}
+                logo={pythonBasicImage}
                 name="Python (Basic)"
                 link="https://www.hackerrank.com/certificates/3fe040885931"
               />
@@ -27,7 +31,7 @@ function CertificatePage() {
 
             <Col xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center">
               <Certificate
-                logo={hackerRankImage}
+                logo={sqlBasicImage}
                 name="SQL (Basic)"
                 link="https://www.hackerrank.com/certificates/aaf8b5acf464"
               />

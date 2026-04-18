@@ -9,7 +9,7 @@ function UtilityDetails({ title, repo, techstack }) {
 
       <a 
         href={repo} 
-        className="utility-details-link"
+        className="utility-link"
         target="_blank"
         rel="noopener noreferrer"
       >

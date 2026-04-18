@@ -15,13 +15,18 @@
 
 /* ===== HEADING ===== */
 .courses-heading {
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 25px;
-  color: #ffffff;
-  font-size:clamp(28px,4vw,48px);
-  font-weight:700;
-  color:#4386e9;
-  
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  color: #4386e9;
+}
+
+/* ===== WRAPPER (FULL CLICKABLE AREA) ===== */
+.course-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 /* ===== COURSE CARD ===== */
@@ -40,12 +45,16 @@
     0 10px 30px rgba(0, 0, 0, 0.4),
     0 40px 80px rgba(0, 0, 0, 0.5);
 
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* override bootstrap body */
-.course-card .card-body {
-  background: transparent !important;
+/* ===== HOVER EFFECT ===== */
+.course-wrapper:hover .course-card {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    0 60px 100px rgba(0, 0, 0, 0.7);
 }
 
 /* ===== IMAGE ===== */
@@ -53,25 +62,39 @@
   max-width: 250px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
-/* ===== TITLE FIX (IMPORTANT) ===== */
+/* image zoom on hover */
+.course-wrapper:hover .course-img {
+  transform: scale(1.08);
+}
+
+/* ===== CARD BODY ===== */
+.course-card .card-body {
+  background: transparent !important;
+}
+
+/* ===== TITLE ===== */
 .course-title {
   margin-top: 10px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: clamp(20px, 2.5vw, 28px);
-
-  color: #ffffff !important;   /* 🔥 force override */
+  color: #ffffff !important;
 }
 
-/* also override bootstrap h5 */
 .course-card .card-title {
   color: #ffffff !important;
 }
 
-/* ===== LINK ===== */
+/* ===== LINK TEXT ===== */
 .course-link {
-  text-decoration: none;
   color: #00bfff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* link hover color */
+.course-wrapper:hover .course-link {
+  color: #ffffff;
 }

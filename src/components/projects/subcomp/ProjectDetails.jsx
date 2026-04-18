@@ -9,7 +9,7 @@ function ProjectDetails({ title, repo, techstack }) {
 
       <a 
         href={repo} 
-        className="project-details-link"
+        className="project-link"
         target="_blank"
         rel="noopener noreferrer"
       >

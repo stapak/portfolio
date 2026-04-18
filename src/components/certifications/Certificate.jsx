@@ -3,24 +3,26 @@ import "./certificate.css";
 
 function Certificate({ name, logo, link }) {
   return (
-    <Card className="certificate-card text-center h-100">
-      <Card.Img variant="top" src={logo} className="certificate-img" />
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="certificate-wrapper"
+    >
+      <Card className="certificate-card text-center h-100">
+        <Card.Img variant="top" src={logo} className="certificate-img" />
 
-      <Card.Body className="d-flex flex-column">
-        <Card.Title className="certificate-title">
-          {name}
-        </Card.Title>
+        <Card.Body className="d-flex flex-column">
+          <Card.Title className="certificate-title">
+            {name}
+          </Card.Title>
 
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="certificate-link mt-auto"
-        >
-          Certificate and Credentials
-        </a>
-      </Card.Body>
-    </Card>
+          <span className="certificate-link mt-auto">
+            Certificate and Credentials
+          </span>
+        </Card.Body>
+      </Card>
+    </a>
   );
 }
 

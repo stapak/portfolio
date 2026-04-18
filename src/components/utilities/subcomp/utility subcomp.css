@@ -50,7 +50,7 @@ img {
 }
 
 /* ===== REPO LINK (BUTTON STYLE) ===== */
-.utility-details-link {
+.utility-link {
   display: inline-block;
 
   font-size: 16px;
@@ -67,7 +67,7 @@ img {
   transition: all 0.2s ease;
 }
 
-.utility-details-link:hover {
+.utility-link:hover {
   background-color: #4fc3e0;
   color: #ffffff;
 }

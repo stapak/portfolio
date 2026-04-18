@@ -3,29 +3,23 @@
   margin-top: 50px;
 }
 
-/* ===== GLASS CONTAINER ===== currently commented*/
-/*
-.certificate-glass {
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.4),
-    0 40px 80px rgba(0, 0, 0, 0.5);
-  padding: 30px;
-}
-*/
-
 /* ===== HEADING ===== */
 .certificate-heading {
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 25px;
-  color: #ffffff;
-  font-size:clamp(28px,4vw,48px);
-  font-weight:700;
-  color:#4386e9;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  color: #4386e9;
 }
 
-/* ===== certificate CARD ===== */
+/* ===== WRAPPER (FULL CLICKABLE) ===== */
+.certificate-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ===== CERTIFICATE CARD ===== */
 .certificate-card {
   max-width: 300px;
   width: 100%;
@@ -41,12 +35,16 @@
     0 10px 30px rgba(0, 0, 0, 0.4),
     0 40px 80px rgba(0, 0, 0, 0.5);
 
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* override bootstrap body */
-.certificate-card .card-body {
-  background: transparent !important;
+/* ===== HOVER EFFECT ===== */
+.certificate-wrapper:hover .certificate-card {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    0 60px 100px rgba(0, 0, 0, 0.7);
 }
 
 /* ===== IMAGE ===== */
@@ -54,25 +52,37 @@
   max-width: 250px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
-/* ===== TITLE FIX (IMPORTANT) ===== */
+.certificate-wrapper:hover .certificate-img {
+  transform: scale(1.08);
+}
+
+/* ===== CARD BODY ===== */
+.certificate-card .card-body {
+  background: transparent !important;
+}
+
+/* ===== TITLE ===== */
 .certificate-title {
   margin-top: 10px;
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: clamp(20px, 2.5vw, 28px);
-
-  color: #ffffff !important;   /* 🔥 force override */
+  color: #ffffff !important;
 }
 
-/* also override bootstrap h5 */
 .certificate-card .card-title {
   color: #ffffff !important;
 }
 
-/* ===== LINK ===== */
+/* ===== LINK TEXT ===== */
 .certificate-link {
-  text-decoration: none;
   color: #00bfff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.certificate-wrapper:hover .certificate-link {
+  color: #ffffff;
 }
