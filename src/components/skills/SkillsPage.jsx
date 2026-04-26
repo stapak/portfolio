@@ -32,7 +32,8 @@ function SkillPage(){
 
   const frontendSkills = [
     { name:"React.js",logo:reactLogo },
-    { name:"Bootstrap",logo:bootstrapLogo }
+    { name:"Bootstrap",logo:bootstrapLogo },
+    { name:"TailwindCSS",logo:tailwindcssLogo }
   ]
 
   const backendSkills =[

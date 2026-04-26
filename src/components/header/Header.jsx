@@ -9,9 +9,12 @@ function Header() {
         <h2 className="header-logo">SACHIN</h2>
         </a>
 
-        <nav className="header-nav">
+        {/*
+          <nav className="header-nav">
           <a href="#UtilitiesPage">Utility-Prototypes</a>
         </nav>
+        
+        */}
 
         <nav className="header-nav">
           <a href="#ProjectsPage">Projects</a>
