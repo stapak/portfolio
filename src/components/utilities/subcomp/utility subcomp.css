@@ -49,6 +49,13 @@ img {
   color: #66d9ff;
 }
 
+/* div tag for utility link and demo link */
+.utility-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
 /* ===== REPO LINK (BUTTON STYLE) ===== */
 .utility-link {
   display: inline-block;
@@ -71,6 +78,32 @@ img {
   background-color: #4fc3e0;
   color: #ffffff;
 }
+
+/* Make demo button look consistent */
+.utility-demo-link {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #66d9ff;
+  background-color: transparent; /* different color to distinguish */
+
+
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 2px solid #66d9ff ;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.utility-demo-link:hover {
+  color: #ffffff;
+  border: 2px solid #ffffff ;
+}
+
 
 /* ===== TECH STACK ===== */
 .utility-techstack {
@@ -158,7 +191,11 @@ img {
     height: 40px;
   }
 
-  .utility-details-link {
+  .utility-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .utility-link {
     font-size: 14px;
     padding: 6px 12px;
   }

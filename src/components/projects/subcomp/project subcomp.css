@@ -49,6 +49,13 @@ img {
   color: #66d9ff;
 }
 
+/* Repo link and Demo link */
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
 /* ===== REPO LINK (BUTTON STYLE) ===== */
 .project-link {
   display: inline-block;
@@ -70,6 +77,31 @@ img {
 .project-link:hover {
   background-color: #4fc3e0;
   color: #ffffff;
+}
+
+/* Make demo button look consistent */
+.project-demo-link {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #66d9ff;
+  background-color: transparent; /* different color to distinguish */
+
+
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 2px solid #66d9ff ;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.project-demo-link:hover {
+  color: #ffffff;
+  border: 2px solid #ffffff ;
 }
 
 /* ===== TECH STACK ===== */
@@ -158,7 +190,16 @@ img {
     height: 40px;
   }
 
-  .project-details-link {
+  .project-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .project-demo-link {
     font-size: 14px;
     padding: 6px 12px;
   }

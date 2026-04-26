@@ -14,6 +14,8 @@ function UtilityCard({ utilityData }) {
         title={utilityData.title}
         techstack={utilityData.techstack}
         repo={utilityData.repolink}
+        demo={utilityData.demo ? projectData.demo : null}
+  
       />
 
       <UtilityDiscription

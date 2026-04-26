@@ -14,6 +14,8 @@ function ProjectCard({ projectData }) {
         title={projectData.title}
         techstack={projectData.techstack}
         repo={projectData.repolink}
+        demo={projectData.demo ? projectData.demo : null}
+       
       />
 
       <ProjectDiscription
